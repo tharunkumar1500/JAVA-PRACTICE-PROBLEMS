@@ -22,7 +22,7 @@ public class While_loop {
         System.out.println("Sum of first " + num + " natural numbers = " + sum);
 
 //        2. Write a Program to reverse the integer number eg. Input n=231 reverse is 132
-        System.out.print("Print the numbers to Reverse: ");
+        System.out.print("Enter the numbers to Reverse: ");
         int number = sc.nextInt();
 
         int reverse = 0;
@@ -35,6 +35,10 @@ public class While_loop {
         };
 
         System.out.println("Reversed number is: " + reverse);
+
+
+
+
 
         sc.close();
 
