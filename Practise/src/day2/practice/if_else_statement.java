@@ -4,43 +4,40 @@ import java.util.Scanner;
 
 public class if_else_statement {
     public static void main(String[] args) {
-//        Scanner sc = new Scanner(System.in);
-//
-//
-//        System.out.print("Enter a single digit number 0 to 9: ");
-//
-//        int num = sc.nextInt();
-//
-//        if (num == 0)
-//            System.out.println("Zero");
-//        else if (num == 1)
-//            System.out.println("One");
-//        else if (num == 2)
-//            System.out.println("Two");
-//        else if (num == 3)
-//            System.out.println("Three");
-//        else if (num == 4)
-//            System.out.println("Four");
-//        else if (num == 5)
-//            System.out.println("Five");
-//        else if (num == 6)
-//            System.out.println("Six");
-//        else if (num == 7)
-//            System.out.println("Seven");
-//        else if (num == 8)
-//            System.out.println("Eight");
-//        else if (num == 9)
-//            System.out.println("Nine");
-//        else
-//            System.out.println("Invalid input! Please enter a single digit.");
-//
-//        sc.close();
 
-//2 example
-        Scanner input = new Scanner(System.in);
+        // Use only ONE Scanner
+        Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter a number (1, 10, 100, 1000): ");
-        int number  = input.nextInt();
+        // ----------- Example 1 -----------
+        System.out.print("Enter a single digit number (0 to 9): ");
+        int num = sc.nextInt();
+
+        if (num == 0)
+            System.out.println("Zero");
+        else if (num == 1)
+            System.out.println("One");
+        else if (num == 2)
+            System.out.println("Two");
+        else if (num == 3)
+            System.out.println("Three");
+        else if (num == 4)
+            System.out.println("Four");
+        else if (num == 5)
+            System.out.println("Five");
+        else if (num == 6)
+            System.out.println("Six");
+        else if (num == 7)
+            System.out.println("Seven");
+        else if (num == 8)
+            System.out.println("Eight");
+        else if (num == 9)
+            System.out.println("Nine");
+        else
+            System.out.println("Invalid input! Please enter a single digit.");
+
+        // ----------- Example 2 -----------
+        System.out.print("\nEnter a number (1, 10, 100, 1000): ");
+        int number = sc.nextInt();
 
         if (number == 1)
             System.out.println("Unit");
@@ -53,6 +50,7 @@ public class if_else_statement {
         else
             System.out.println("Invalid number! Please enter 1, 10, 100, or 1000.");
 
-        input.close();
+        // Close scanner at the END
+        sc.close();
     }
 }
