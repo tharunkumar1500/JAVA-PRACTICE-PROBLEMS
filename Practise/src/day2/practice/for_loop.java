@@ -23,6 +23,7 @@ public class for_loop {
         System.out.print("Enter the numbers to Reverse: ");
         int number = sc.nextInt();
         int reverse = 0;
+        int temp = number;
 
         for (; number != 0; number = number / 10){
             int digit = number % 10;
@@ -31,6 +32,16 @@ public class for_loop {
         }
 
         System.out.println("Reversed number is: " + reverse);
+
+//        3. Write a Program to find Palindrome Number
+
+        if(reverse == temp){
+            System.out.println("The number is Palindrome");
+
+        }
+        else {
+            System.out.println("The number is not a  Palindrome");
+        }
 
         sc.close();
 
